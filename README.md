@@ -1,8 +1,8 @@
 # Dependencies
 
-Angular 16
-Node v18.10.0
-Npm 8.19.2
+- Angular 16
+- Node v18.10.0
+- Npm 8.19.2
 
 # Installation
 
