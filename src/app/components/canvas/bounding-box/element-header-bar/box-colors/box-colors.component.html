@@ -1,0 +1,6 @@
+<div class="font-selection-wrapper" (click)="toggleDropdown()">
+    <img appSvgImage [svgName]="'element-header-bar/text'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'Font'">
+</div>
+<div *ngIf="getCurrentMenu === MENU_ID" (click)="$event.stopPropagation();" [class.above]="dropdownAbove" [style.height.px]="dropdownItemHeight" class="font-selection-dropdown">
+    test
+</div>

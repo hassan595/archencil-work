@@ -1,0 +1,39 @@
+:host {
+    position: absolute;
+}
+
+.border-separator::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #D1D5DB;
+    /* adjust the color to a lighter gray */
+}
+
+.header-section {
+    position: relative;
+    padding: 0.2rem 1.0rem;
+}
+
+.header-section-separator {
+    position: relative;
+    padding: 0;
+}
+
+.header-bar {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 25%);
+    font-size: 14px;
+    user-select: none;
+    /* This line prevents user text selection */
+}
+
+.section {
+    display: flex;
+}
+
+.section .header-section:not(:last-child) {
+    margin-right: -1rem; // Negative margin to reduce the space. Adjust as needed.
+}

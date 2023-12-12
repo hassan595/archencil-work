@@ -1,0 +1,64 @@
+.font-selection-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal; /* Add this line for boldness */
+    font-size: 1.2em; /* Increase the font size */
+}
+
+.font-selection-display {
+    cursor: pointer;
+}
+
+.font-selection-input {
+    padding: 0;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.font-selection-input:hover {
+    cursor: pointer;
+}
+
+.font-selection-input:focus {
+    cursor: text;
+}
+
+.arrow-buttons {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.font-selection-dropdown {
+    position: absolute;
+    top: auto;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 200px;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.font-selection-dropdown.above {
+    bottom: 100%;
+}
+
+.font-selection-dropdown:not(.above) {
+    top: 100%;
+}
+
+.font-selection-dropdown div {
+    padding: 4px 8px;
+    cursor: pointer;
+    font-weight: normal; /* Add this line for boldness */
+    font-size: 1.2em; /* Increase the font size */
+}
+
+.font-selection-dropdown div:hover {
+    background-color: #eee;
+}

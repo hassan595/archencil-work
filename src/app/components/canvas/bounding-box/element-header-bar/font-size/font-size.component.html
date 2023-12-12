@@ -1,0 +1,10 @@
+<div class="font-size-wrapper">
+    <input [(ngModel)]="fontSize" (click)="toggleDropdown()" (keydown.enter)="onFontSizeChange($event)" type="text" pattern="\d*" class="font-size-input" />
+    <div class="arrow-buttons">
+        <div (click)="increaseFontSize()">↑</div>
+        <div (click)="decreaseFontSize()">↓</div>
+    </div>
+</div>
+<div *ngIf="getCurrentMenu === MENU_ID" (click)="$event.stopPropagation();" [class.above]="dropdownAbove" [style.height.px]="availableFontSizes.length * dropdownItemHeight" class="font-size-dropdown">
+    <div *ngFor="let size of availableFontSizes" (click)="selectSize(size)">{{ size }}</div>
+</div>

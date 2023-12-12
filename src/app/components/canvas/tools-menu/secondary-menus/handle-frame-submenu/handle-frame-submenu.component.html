@@ -1,0 +1,40 @@
+<div class="submenu flex flex-col items-center">
+    <div class="grid grid-cols-3 gap-4">
+        <div class="grid content-end h-full w-full cursor-pointer item-container" (click)="onSvgClick('tools-menu-frames/custom')">
+            <div class="justify-self-center py-2">
+                <img appSvgImage [svgName]="'tools-menu-frames/custom'" [svgWidth]="'30'" [svgHeight]="'auto'" [svgLabel]="'Custom'">
+            </div>
+            <div class="justify-self-center px-2 mt-0">Custom</div>
+        </div>
+        <div class="grid content-end h-full w-full cursor-pointer item-container" (click)="onSvgClick('tools-menu-frames/a4')">
+            <div class="justify-self-center py-2">
+                <img appSvgImage [svgName]="'tools-menu-frames/a4'" [svgWidth]="'30'" [svgHeight]="'auto'" [svgLabel]="'A4'">
+            </div>
+            <div class="justify-self-center px-2 mt-0">A4</div>
+        </div>
+        <div class="grid content-end h-full w-full cursor-pointer item-container" (click)="onSvgClick('tools-menu-frames/letter')">
+            <div class="justify-self-center py-2">
+                <img appSvgImage [svgName]="'tools-menu-frames/letter'" [svgWidth]="'30'" [svgHeight]="'auto'" [svgLabel]="'Letter'">
+            </div>
+            <div class="justify-self-center px-2 mt-0">Letter</div>
+        </div>
+        <div class="grid content-end h-full w-full cursor-pointer item-container" (click)="onSvgClick('tools-menu-frames/16-9')">
+            <div class="justify-self-center py-2">
+                <img appSvgImage [svgName]="'tools-menu-frames/16-9'" [svgWidth]="'30'" [svgHeight]="'auto'" [svgLabel]="'16:9'">
+            </div>
+            <div class="justify-self-center px-2 mt-0">16:9</div>
+        </div>
+        <div class="grid content-end h-full w-full cursor-pointer item-container" (click)="onSvgClick('tools-menu-frames/4-3')">
+            <div class="justify-self-center py-2">
+                <img appSvgImage [svgName]="'tools-menu-frames/4-3'" [svgWidth]="'30'" [svgHeight]="'auto'" [svgLabel]="'4:3'">
+            </div>
+            <div class="justify-self-center px-2 mt-0">4:3</div>
+        </div>
+        <div class="grid content-end h-full w-full cursor-pointer item-container" (click)="onSvgClick('tools-menu-frames/1-1')">
+            <div class="justify-self-center py-2">
+                <img appSvgImage [svgName]="'tools-menu-frames/1-1'" [svgWidth]="'30'" [svgHeight]="'auto'" [svgLabel]="'1:1'">
+            </div>
+            <div class="justify-self-center px-2 mt-0">1:1</div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="submenu flex flex-col justify-center h-full">
+    <div class="item-container" (click)="onSvgClick('tools-menu-upload/laptop')">
+        <img appSvgImage [svgName]="'tools-menu-upload/laptop'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'My device'">
+        <span class="item-title">My device</span>
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-upload/link')">
+        <img appSvgImage [svgName]="'tools-menu-upload/link'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Link'">
+        <span class="item-title">Link</span>
+    </div>
+</div>
+<input hidden type="file" #filePicker>

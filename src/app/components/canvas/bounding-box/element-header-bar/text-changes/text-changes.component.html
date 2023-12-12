@@ -1,0 +1,51 @@
+<div class="flex">
+    <!-- Font Style -->
+    <div id="font-style-menu" class="mr-4 dropdown" (click)="toggleOption('fontStyle', MENU_ID)">
+        <img appSvgImage [svgName]="'element-header-bar_custom/bold'" [svgWidth]="'18'" [svgHeight]="'auto'" [svgLabel]="'Bold'">
+        <div class="dropdown-menu" *ngIf="activeMenu === 'fontStyle' && getCurrentMenu === MENU_ID">
+            <img appSvgImage [svgName]="'element-header-bar/bold'" [svgWidth]="'18'" [svgHeight]="'auto'" [svgLabel]="'Bold'" (click)="toggleBold()">
+            <img appSvgImage [svgName]="'element-header-bar/italics'" [svgWidth]="'18'" [svgHeight]="'auto'" (click)="toggleItalic()">
+            <img appSvgImage [svgName]="'element-header-bar/underline'" [svgWidth]="'19'" [svgHeight]="'auto'" (click)="toggleUnderline()">
+            <img appSvgImage [svgName]="'element-header-bar/strikethrough'" [svgWidth]="'20'" [svgHeight]="'auto'" (click)="toggleStrikethrough()">
+        </div>
+    </div>
+
+    <!-- Alignment -->
+    <div id="alignment-menu" class="mr-4 dropdown" (click)="toggleOption('alignment', MENU_ID)">
+        <img appSvgImage [svgName]="'element-header-bar/align-center'" [svgWidth]="'18'" [svgHeight]="'auto'" [svgLabel]="'Alignment'">
+        <div class="dropdown-menu" *ngIf="activeMenu === 'alignment' && getCurrentMenu === MENU_ID">
+            <img appSvgImage [svgName]="'element-header-bar/left-align'" [svgWidth]="'18'" [svgHeight]="'auto'">
+            <img appSvgImage [svgName]="'element-header-bar/align-center'" [svgWidth]="'18'" [svgHeight]="'auto'">
+            <img appSvgImage [svgName]="'element-header-bar/right-align'" [svgWidth]="'18'" [svgHeight]="'auto'">
+            <img appSvgImage [svgName]="'element-header-bar/justify'" [svgWidth]="'18'" [svgHeight]="'auto'">
+        </div>
+    </div>
+
+    <!-- List -->
+    <div id="list-menu" class="mr-4 dropdown" (click)="toggleOption('list', MENU_ID)">
+        <img appSvgImage [svgName]="'element-header-bar/list'" [svgWidth]="'18'" [svgHeight]="'18'" [svgLabel]="'List'">
+        <div class="dropdown-menu list-menu" *ngIf="activeMenu === 'list' && getCurrentMenu === MENU_ID">
+            <div class="list-icons">
+                <img appSvgImage [svgName]="'element-header-bar/list'" [svgWidth]="'18'" [svgHeight]="'18'">
+                <img appSvgImage [svgName]="'element-header-bar/list-1'" [svgWidth]="'18'" [svgHeight]="'18'">
+            </div>
+            <div class="divider"></div>
+            <div class="indent-icons">
+                <img appSvgImage [svgName]="'element-header-bar/indent'" [svgWidth]="'18'" [svgHeight]="'18'">
+                <img appSvgImage [svgName]="'element-header-bar/indent-1'" [svgWidth]="'18'" [svgHeight]="'18'">
+            </div>
+        </div>
+    </div>
+
+    <!-- Link -->
+    <div class="link-icon" (click)="toggleLinkField($event)">
+        <img appSvgImage [svgName]="'element-header-bar/link'" [svgWidth]="'18'" [svgHeight]="'auto'" [svgLabel]="'Link'">
+    </div>
+    <div class="link-field" *ngIf="activeMenu === 'linkField' && getCurrentMenu === MENU_ID" [style.top]="linkFieldTop">
+        <input type="text" placeholder="Paste a link" class="link-input">
+        <button class="apply-button">Apply</button>
+        <button class="close-button" (click)="closeLinkField($event)">
+            <img appSvgImage [svgName]="'windows_modified/cross'" [svgWidth]="'24'" [svgHeight]="'24'">
+        </button>
+    </div>
+</div>

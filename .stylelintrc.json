@@ -1,0 +1,35 @@
+{
+    "extends": [
+        "stylelint-config-standard-scss",
+        "stylelint-config-css-modules"
+    ],
+    "plugins": ["stylelint-scss"],
+    "rules": {
+        "comment-empty-line-before": null,
+        "color-function-notation": null,
+        "alpha-value-notation": null,
+        "color-hex-length": null,
+        "at-rule-no-unknown": null,
+        "scss/at-rule-no-unknown": [
+            true,
+            {
+                "ignoreAtRules": [
+                    "tailwind",
+                    "apply",
+                    "variants",
+                    "responsive",
+                    "screen"
+                ]
+            }
+        ],
+        "selector-type-no-unknown": null,
+        "no-empty-source": null,
+        "block-no-empty": true,
+        "selector-pseudo-element-no-unknown": [
+            true,
+            { "ignorePseudoElements": ["ng-deep"] }
+        ],
+        "scss/load-no-partial-leading-underscore": null,
+        "scss/at-import-no-partial-leading-underscore": null
+    }
+}

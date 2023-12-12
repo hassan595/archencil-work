@@ -1,0 +1,58 @@
+.font-size-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.font-size-display {
+    cursor: pointer;
+}
+
+.font-size-input {
+    padding: 0;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px!important;
+}
+
+.font-size-input:hover {
+    cursor: pointer;
+}
+
+.font-size-input:focus {
+    cursor: text;
+}
+
+.arrow-buttons {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.font-size-dropdown {
+    position: absolute;
+    top: auto;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 50px;
+}
+
+.font-size-dropdown.above {
+    bottom: 100%;
+}
+
+.font-size-dropdown:not(.above) {
+    top: 100%;
+}
+
+.font-size-dropdown div {
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.font-size-dropdown div:hover {
+    background-color: #eee;
+}

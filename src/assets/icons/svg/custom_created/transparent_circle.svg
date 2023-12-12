@@ -1,0 +1,10 @@
+<svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="checkerboard" patternUnits="userSpaceOnUse" width="8" height="8">
+            <rect fill="#ffffff" width="8" height="8"/>
+            <rect fill="#808080" width="4" height="4"/>
+            <rect fill="#808080" x="4" y="4" width="4" height="4"/>
+        </pattern>
+    </defs>
+    <circle cx="15" cy="15" r="14" fill="url(#checkerboard)"/>
+</svg>

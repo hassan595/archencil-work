@@ -1,0 +1,28 @@
+<div class="flex">
+  <!-- Text color -->
+  <div id="font-style-menu" class="mr-4 dropdown" (click)="toggleOption('textColor', MENU_ID)">
+    <img appSvgImage [svgName]="'element-header-bar/color'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'Font color'">
+    <div class="dropdown-menu color-grid" *ngIf="activeMenu === 'textColor' && getCurrentMenu === MENU_ID">
+      <div *ngFor="let color of colors_text_menu" class="color-circle" [style.background-color]="color" [style.border]=" '2px solid ' + getDarkerColor(color)"></div>
+      <div class="color-circle add-color" (click)="addColor('textColor')">
+        <img appSvgImage [svgName]="'custom_created/plus_sign'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'Font color'">
+      </div>
+    </div>
+  </div>
+
+  <!-- Highlight color -->
+  <div id="highlightColor-menu" class="dropdown" (click)="toggleOption('highlightColor', MENU_ID)">
+    <img appSvgImage [svgName]="'element-header-bar/highlight'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'Highlight color'">
+    <div class="dropdown-menu color-grid" *ngIf="activeMenu === 'highlightColor' && getCurrentMenu === MENU_ID">
+      <ng-container *ngFor="let color of colors_highlight_menu">
+        <div *ngIf="color !== ''" class="color-circle" [style.background-color]="color" [style.border]=" '2px solid ' + getDarkerColor(color)"></div>
+        <div *ngIf="color === ''" class="transparent-circle-container">
+          <img appSvgImage [svgName]="'custom_created/transparent_circle'" [svgWidth]="'30'" [svgHeight]="'30'" [svgLabel]="'Transparent color'">
+        </div>
+      </ng-container>
+      <div class="color-circle add-color">
+        <img appSvgImage [svgName]="'custom_created/plus_sign'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'Font color'">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div #headerBar class="header-bar flex items-stretch justify-between bg-white rounded-lg">
+    <!-- Switch type -->
+    <div class="section">
+        <div class="header-section flex items-center ">
+            <app-switch-type [headerBar]="headerBarElement"></app-switch-type>
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center  border-separator"></div>
+
+    <!-- Font -->
+    <div class="section">
+        <div class="header-section flex items-center">
+            <app-font-selection [headerBar]="headerBarElement" [headerBarChange]="headerBarChange"></app-font-selection>
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center border-separator"></div>
+
+    <!-- Font size -->
+    <div class="section">
+        <div class="header-section flex items-center">
+            <app-font-size [headerBar]="headerBarElement" [headerBarChange]="headerBarChange"></app-font-size>
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center  border-separator"></div>
+
+    <!-- Text changes -->
+    <div class="section">
+        <div class="header-section flex items-center">
+            <app-text-changes [headerBar]="headerBarElement"></app-text-changes>
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center  border-separator"></div>
+
+    <!-- Text colors -->
+    <div class="section">
+        <!-- Font color -->
+        <div class="header-section flex items-center ">
+            <app-text-colors [headerBar]="headerBarElement"></app-text-colors>
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center  border-separator"></div>
+
+    <!-- Box colors -->
+    <div class="section">
+        <!-- Set color and opacity -->
+        <div class="header-section flex items-center ">
+            <app-box-colors [headerBar]="headerBarElement"></app-box-colors>
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center  border-separator"></div>
+
+    <!-- Comment -->
+    <div class="section">
+        <div class="header-section flex items-center ">
+            <img appSvgImage [svgName]="'element-header-bar/comment'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'Comment'">
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center  border-separator"></div>
+
+    <!-- Lock -->
+    <div class="section">
+        <div class="header-section flex items-center ">
+            <img appSvgImage [svgName]="'element-header-bar/lock'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'Lock'">
+        </div>
+    </div>
+    <div class="header-section-separator flex items-center  border-separator"></div>
+
+    <!-- more -->
+    <div class="section">
+        <div class="header-section flex items-center ">
+            <img appSvgImage [svgName]="'element-header-bar/menu'" [svgWidth]="'24'" [svgHeight]="'auto'" [svgLabel]="'More'">
+        </div>
+    </div>
+</div>

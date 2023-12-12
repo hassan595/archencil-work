@@ -1,0 +1,13 @@
+<div class="absolute z-50 hidden w-48 p-2 mt-1 space-y-1 text-gray-700 bg-white border border-gray-300 rounded-md shadow-lg" id="contextMenu">
+    <ng-container *ngTemplateOutlet="menuItemsTemplate; context: { $implicit: menuItems }"></ng-container>
+</div>
+
+<ng-template #menuItemsTemplate let-items let-objectId="objectId">
+    <ng-container *ngFor="let item of items">
+        <button class="w-full px-4 py-2 text-left hover:bg-gray-300" (click)="onItemClick(item.action, objectId)">
+            <img [src]="item.icon" alt="" class="icon inline pr-2"> <!-- This line is added -->
+            {{ item.label }}
+        </button>
+    </ng-container>
+</ng-template>
+

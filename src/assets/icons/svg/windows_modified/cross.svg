@@ -1,0 +1,8 @@
+<svg height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+    <g id="Layer_2" data-name="Layer 2">
+        <!-- Black circle -->
+        <circle cx="12" cy="12" r="11" fill="#000000"/>
+        <!-- White X -->
+        <path fill="#ffffff" d="m16.242 14.829a1 1 0 0 1 -1.414 1.414l-2.828-2.829-2.828 2.829a1 1 0 0 1 -1.414-1.414l2.828-2.829-2.828-2.829a1 1 0 0 1 1.414-1.414l2.828 2.829 2.828-2.829a1 1 0 0 1 1.414 1.414l-2.828 2.829z"/>
+    </g>
+</svg>

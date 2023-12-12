@@ -1,0 +1,34 @@
+<div class="submenu flex flex-col justify-center h-full">
+    <input [(ngModel)]="searchTerm" type="text" placeholder="Search" class="search-bar mb-4">
+    <div class="item-container" (click)="onSvgClick('tools-menu-more/canvas')">
+        <img appSvgImage [svgName]="'tools-menu-more/canvas'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Canvas'">
+        <div class="item-title">Canvas</div>
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-more/list')">
+        <img appSvgImage [svgName]="'tools-menu-more/list'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Story hits'">
+        <div class="item-title">Story hits</div>
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-more/scatter-graph')">
+        <img appSvgImage [svgName]="'tools-menu-more/scatter-graph'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Plotter'">
+        <div class="item-title">Plotter</div>
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-more/storyboard')">
+        <img appSvgImage [svgName]="'tools-menu-more/storyboard'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Storyboard'">
+        <div class="item-title">Storyboard</div>
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-more/time-management')">
+        <img appSvgImage [svgName]="'tools-menu-more/time-management'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Timeline'">
+        <div class="item-title">Timeline</div>
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-more/typewriter')">
+        <img appSvgImage [svgName]="'tools-menu-more/typewriter'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Typewriter'">
+        <div class="item-title">Typewriter</div>
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-more/writing')">
+        <img appSvgImage [svgName]="'tools-menu-more/writing'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'Describer'">
+        <div class="item-title">Describer</div>
+    </div>
+    <div *ngIf="searchTerm && filteredSvgFiles.length === 0" class="no-result-found">
+        No result found.
+    </div>
+</div>

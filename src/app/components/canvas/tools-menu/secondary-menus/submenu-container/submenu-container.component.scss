@@ -1,0 +1,17 @@
+.options-menu {
+    width: max-content; // use max-content to expand to the maximum size required to contain its content
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 0.5rem);
+    /* transform: translateY(-50%); */
+    overflow: visible;
+    /* It's necessary for the color picker */
+    display: flex;
+    /* use flexbox to center the child */
+    justify-content: center;
+    /* center child horizontally */
+    align-items: center;
+    /* center child vertically */
+    background-color: #fff6f6;
+}

@@ -1,0 +1,25 @@
+.item-container {
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: blue;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover::after {
+        opacity: 0.5;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,39 @@
+.option-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.9);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.option-wrapper span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* test */
+// sdadsa
+.sticker-wrapper-wrapper {
+  width: 200px;
+}
+
+.sticker-wrapper {
+  margin: 0 auto;
+  width: 150px;
+}

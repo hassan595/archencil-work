@@ -1,0 +1,57 @@
+.item-container {
+    display: flex;
+    justify-content: flex-start; // aligns content to the left
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: blue;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    &:hover::after {
+        opacity: 0.5;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+        margin-right: 0.5em; // Add a little space between SVG and title
+    }
+
+    .item-title {
+        font-size: 0.875em; // Adjust to your desired size
+    }
+}
+
+::ng-deep .swal-title-left {
+    text-align: left !important;
+}
+
+::ng-deep .swal2-actions {
+    width: 100% !important;
+    margin-left: 29px!important;
+}
+
+::ng-deep .swal2-confirm {
+    width: 80px !important;
+}
+
+::ng-deep .swal2-cancel {
+    width: 80px !important;
+}
+
+::ng-deep .swal-actions-left {
+    justify-content: flex-start !important;
+}
+

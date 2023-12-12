@@ -1,0 +1,8 @@
+<div class="font-selection-wrapper" (click)="toggleDropdown()" [ngStyle]="getFontStyle(selectedFont)">
+    {{ selectedFont }}
+</div>
+<div *ngIf="getCurrentMenu === MENU_ID" (click)="$event.stopPropagation();" [class.above]="dropdownAbove" [style.height.px]="availableFonts.length * dropdownItemHeight" class="font-selection-dropdown">
+    <div *ngFor="let font of availableFonts" [ngStyle]="getFontStyle(font)" (click)="selectFont(font)" title="{{ font }}">
+        {{ font }}
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="submenu flex flex-col justify-center h-full">
+    <div class="item-container" (click)="onSvgClick('tools-menu-drawing/pen')">
+        <img appSvgImage [svgName]="'tools-menu-drawing/pen'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'pen'">
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-drawing/highlighter')">
+        <img appSvgImage [svgName]="'tools-menu-drawing/highlighter'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'highlighter'">
+    </div>
+    <div class="item-container" (click)="onSvgClick('tools-menu-drawing/eraser')">
+        <img appSvgImage [svgName]="'tools-menu-drawing/eraser'" [svgWidth]="'20'" [svgHeight]="'20'" [svgLabel]="'eraser'">
+    </div>
+</div>

@@ -1,0 +1,124 @@
+.dropdown-menu {
+    position: absolute;
+    left: auto;
+    transform: translateX(-42%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: max-content;
+    padding: 15px;
+}
+
+.dropdown-menu.above {
+    bottom: calc(100%);
+}
+
+.dropdown-menu:not(.above) {
+    top: calc(100%);
+}
+
+.list-icons img,
+.indent-icons img {
+    margin: 15px 10px !important;
+}
+
+.dropdown img {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.dropdown-menu img {
+    margin: 0 5px;
+}
+
+.dropdown:last-child img {
+    margin-right: 0;
+}
+
+.list-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown-menu.list-menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.list-icons,
+.indent-icons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.divider {
+    height: 1px;
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    margin: 5px 0;
+}
+
+.link-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.link-field {
+    position: fixed;
+    top: calc(var(--header-bar-bottom));
+    left: var(--link-field-left);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.apply-link {
+    margin-left: auto;
+}
+
+.link-input {
+    width: calc(100% - 50px);
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.apply-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-family: var(--archencil-font-menu);
+    color: var(--passionate-red);
+}
+
+.apply-button:hover {
+    text-decoration: underline;
+}
+
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: -11px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}

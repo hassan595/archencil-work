@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.tabCompletion": "on",
+        "diffEditor.codeLens": true,
+        "typescript.tsdk": "./node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true
+    }
+}
+
